@@ -1,0 +1,24 @@
+README: 
+
+About httpcheck.py:
+httpcheck.py is a python script that will read in a list of endpoints (including urls,
+headers, body, etc.) in YAML format and will check each of these endpoints to see if they
+are UP or DOWN. The program will print the availability percentage based on each domain 
+(multiple endpoints can be under a domain). The program will recheck the endpoints every
+15 seconds until the user terminates the program. 
+
+Instructions to run httpcheck.py 
+1. Please open up terminal on Mac/Linux or Command Line on Windows and navigate to the 
+directory that httpcheck.py is located in. 
+2. Install the pyyaml and requests libraries by entering the following commands:
+
+pip3 install pyyaml
+pip3 install requests
+
+3. Run the Python script by entering the following command:
+
+python3 httpcheck.py <path of inputfile>
+
+where <path of inputfile> is the path to the YAML file containing the endpoints
+
+4. To terminate the program, please press Command+C on Mac or Ctrl+C on Windows/Linux.  
